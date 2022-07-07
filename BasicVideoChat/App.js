@@ -15,7 +15,7 @@ class App extends Component {
       <View style={{ flex: 1, flexDirection: 'column', paddingHorizontal: 100, paddingVertical: 50 }}>
         <OTSession apiKey={this.apiKey} sessionId={this.sessionId} token={this.token}>
           <OTPublisher style={{ width: 200, height: 200 }} />
-          <OTSubscriber style={{ width: 200, height: 200 }} />
+          <OTSubscriber style={{ width: 200, height: 200 }} subscribeToSelf />
         </OTSession>
       </View>
     );
